@@ -4,8 +4,17 @@
 # https://projecteuler.net/problem=1
 # 
 
+def calculate_sum():
+    s = 0
+    for i in range(1000):
+        if not i % 3 or not i % 5:
+            s += i
+    return s
+
 def main():
-    print("Hello World!")
+    s = calculate_sum()
+    print(s)
+    return s
 
 if __name__ == "__main__":
     main()
